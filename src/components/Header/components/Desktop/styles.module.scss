@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 26px 124px;
+  padding-left: 124px;
+  padding-right: 124px;
   color: var(--gray-headline);
   background-color: var(--green-500);
 }
@@ -22,14 +23,17 @@
   gap: 32px;
 
   span {
+    height: 76px;
     transition: all 0.2s;
     cursor: pointer;
     color: var(--green-900);
 
+    display: flex;
+    align-items: center;
+
     &:hover {
       color: var(--green-hover);
       font-weight: 700;
-      letter-spacing: 0.5px;
       position: relative;
 
       &:after {
@@ -39,7 +43,7 @@
         height: 2px;
         z-index: 1;
         background: var(--green-hover);
-        bottom: -36px;
+        bottom: 0;
         transform: translateX(-50%);
         left: 50%;
       }
