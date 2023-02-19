@@ -1,0 +1,91 @@
+$maxWidth: 1366px;
+$minWidth: 360px;
+$breakpoint: 1021px;
+
+:root {
+  // Colors
+  --green-900: #00856f;
+  --green-500: #dce9e2;
+  --green-200: #f7f9f9;
+  --green-hover: #00453a;
+  --beige: #fffaf1;
+  --gray-headline: #061800;
+  --gray-paragraph: #384633;
+  --white: #3e3e3e;
+
+  // Font sizes
+  --head1Desktop: 52px;
+  --head1Mobile: 48px;
+
+  --head2Desktop: 48px;
+  --head2Mobile: 34px;
+
+  --head3Desktop: 40px;
+  --head3Mobile: 20px;
+
+  --head4: 24px;
+  --paragraph: 18px;
+  --span: 16px;
+  --small: 14px;
+
+  // media-queries
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+small {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--head1Desktop);
+
+  @media screen and (max-width: $breakpoint) {
+    font-size: var(--head1Mobile);
+  }
+}
+
+h2 {
+  font-size: var(--head2Desktop);
+
+  @media screen and (max-width: $breakpoint) {
+    font-size: var(--head2Mobile);
+  }
+}
+
+h3 {
+  font-size: var(--head3Desktop);
+
+  @media screen and (max-width: $breakpoint) {
+    font-size: var(--head3Mobile);
+  }
+}
+
+h4 {
+  font-size: var(--head4);
+}
+
+p {
+  font-size: var(--paragraph);
+}
+
+span {
+  font-size: var(--span);
+}
+
+small {
+  font-size: var(--small);
+}
