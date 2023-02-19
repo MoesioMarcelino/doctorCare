@@ -10,11 +10,13 @@
 
   display: flex;
   column-gap: 16px;
+  align-items: center;
 
   cursor: pointer;
   transition: all 0.2s;
 
   text-transform: uppercase;
+  white-space: nowrap;
 
   &:hover {
     background-color: var(--green-hover);

@@ -1,14 +1,14 @@
+import { HtmlHTMLAttributes, useState } from 'react'
 import { Logo, PrimaryButton } from '@/components'
 import { MenuListProps } from '@/components/Header'
 
-import { hamburguer, instagram, facebook, youtube, close } from '@/assets'
+import { hamburguerWhite, hamburguerGreen, instagram, facebook, youtube, close } from '@/assets'
 
 import styles from './styles.module.scss'
-import { useState } from 'react'
 
 type HeaderMobileProps = {
   menuList: MenuListProps[]
-}
+} & HtmlHTMLAttributes<HTMLDivElement>
 
 const socialMediaList = [
   { icon: instagram, alt: 'Instagram icon' },
@@ -16,16 +16,22 @@ const socialMediaList = [
   { icon: youtube, alt: 'Youtube icon' }
 ]
 
-export function HeaderMobile({ menuList }: HeaderMobileProps) {
+export function HeaderMobile({ menuList, ...props }: HeaderMobileProps) {
   const [menuActivated, setMenuActivated] = useState(false)
 
+  const alt = menuActivated ? 'Close icon' : 'Hamburguer icon'
+  const src = menuActivated ? close : hamburguerGreen
+  const containerClassName = `${styles.containerHeader} ${
+    menuActivated ? styles.menuGreen : styles.menuTransparent
+  }`
+
   return (
-    <div className={styles.container}>
-      <div className={styles.containerHeader}>
-        <Logo theme="white" />
+    <div className={styles.container} {...props}>
+      <div className={containerClassName}>
+        <Logo theme={menuActivated ? 'white' : 'green'} />
         <img
-          src={menuActivated ? close : hamburguer}
-          alt={menuActivated ? 'Close icon' : 'Hamburguer icon'}
+          src={src}
+          alt={alt}
           className={styles.hamburguerIcon}
           onClick={() => setMenuActivated((oldState) => !oldState)}
         />

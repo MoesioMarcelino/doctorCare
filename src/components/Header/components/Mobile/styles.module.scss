@@ -5,15 +5,24 @@
 
 .containerHeader {
   padding: 16px 24px;
-  background-color: var(--green-900);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  transition: background 0.5s ease;
+
   .hamburguerIcon {
     cursor: pointer;
   }
+}
+
+.menuGreen {
+  background-color: var(--green-900);
+}
+
+.menuTransparent {
+  background-color: transparent;
 }
 
 @keyframes appearMenu {
@@ -44,6 +53,12 @@
 
   color: var(--beige);
   font-weight: 700;
+
+  position: absolute;
+  z-index: 1;
+  top: 72px;
+  left: 0;
+  width: 100%;
 
   button {
     background-color: var(--beige);
