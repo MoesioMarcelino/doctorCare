@@ -1,0 +1,22 @@
+.buttonContainer {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 24px;
+
+  border-radius: 40px;
+  border: 1px solid var(--green-900);
+  color: var(--beige);
+  background-color: var(--green-900);
+
+  display: flex;
+  column-gap: 16px;
+
+  cursor: pointer;
+  transition: all 0.2s;
+
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: var(--green-hover);
+  }
+}
