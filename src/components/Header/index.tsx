@@ -1,4 +1,4 @@
-import { useWindowDimensions } from '@/hooks/useWindowDimentions'
+import { useWindow } from '@/hooks'
 import { HeaderDesktop, HeaderMobile } from './components'
 
 import styles from './styles.module.scss'
@@ -13,18 +13,20 @@ const menuList: MenuListProps[] = [
 ]
 
 export function Header() {
-  const { isMobile } = useWindowDimensions()
+  const { isMobile, isScrollDown } = useWindow()
+
+  const containerClassName = `${styles.container} ${isScrollDown && styles.shaddowContainer}`
 
   if (isMobile) {
     return (
-      <div className={styles.container}>
+      <div className={containerClassName}>
         <HeaderMobile menuList={menuList} />
       </div>
     )
   }
 
   return (
-    <div className={styles.container}>
+    <div className={containerClassName}>
       <HeaderDesktop menuList={menuList} />
     </div>
   )

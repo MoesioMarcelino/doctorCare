@@ -3,6 +3,12 @@
   align-items: center;
   justify-content: center;
   color: var(--gray-headline);
+
+  transition: background 0.5s ease;
+}
+
+.containerGreen {
+  background-color: var(--green-900);
 }
 
 .wrapper {
@@ -45,6 +51,31 @@
         transform: translateX(-50%);
         left: 50%;
       }
+    }
+  }
+}
+
+.menuGreen {
+  span {
+    color: var(--green-500);
+    &:hover {
+      color: var(--green-200);
+
+      &:after {
+        background: var(--green-200);
+      }
+    }
+  }
+}
+
+.buttonContainer {
+  button {
+    border: 1px solid var(--white);
+    color: var(--white);
+    transition: filter 0.5s;
+
+    &:hover {
+      filter: brightness(1.2);
     }
   }
 }

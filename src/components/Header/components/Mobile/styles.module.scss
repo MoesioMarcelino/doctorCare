@@ -59,18 +59,26 @@
   top: 72px;
   left: 0;
   width: 100%;
+}
 
+.buttonContainer {
   button {
-    background-color: var(--beige);
-    color: var(--green-900);
-  }
+    border: 1px solid var(--white);
+    color: var(--white);
+    transition: filter 0.5s;
+    border-radius: 40px;
 
-  .socialMedia {
-    display: flex;
-    column-gap: 32px;
-
-    img {
-      cursor: pointer;
+    &:hover {
+      filter: brightness(1.2);
     }
+  }
+}
+
+.socialMedia {
+  display: flex;
+  column-gap: 32px;
+
+  img {
+    cursor: pointer;
   }
 }
