@@ -1,11 +1,12 @@
-import { Home } from '@/screens'
+import { Banner, Services } from '@/components'
 
 import styles from './styles.module.scss'
 
 export function App() {
   return (
     <div className={styles.container}>
-      <Home />
+      <Banner />
+      <Services />
     </div>
   )
 }

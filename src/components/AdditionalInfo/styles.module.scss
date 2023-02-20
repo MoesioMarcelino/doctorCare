@@ -5,12 +5,13 @@ $breakpoint: 1021px;
   background-color: var(--beige);
   padding: 40px 0;
   border-radius: 6px;
-  width: fit-content;
 
   @media screen and (max-width: $breakpoint) {
-    flex-direction: column;
     gap: 60px;
     padding: 40px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 

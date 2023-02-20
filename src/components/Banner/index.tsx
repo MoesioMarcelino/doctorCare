@@ -1,6 +1,6 @@
 import { HtmlHTMLAttributes } from 'react'
 import { personaBanner, whatsappWhite } from '@/assets'
-import { PrimaryButton } from '@/components'
+import { AdditionalInfo, PrimaryButton } from '@/components'
 
 import styles from './styles.module.scss'
 
@@ -22,6 +22,9 @@ export function Banner() {
         </div>
         <div className={styles.rightSide}>
           <img src={personaBanner} alt="Persona banner" />
+        </div>
+        <div className={styles.additionalInfo}>
+          <AdditionalInfo />
         </div>
       </div>
     </div>

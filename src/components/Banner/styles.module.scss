@@ -6,13 +6,12 @@ $breakpoint: 1021px;
   background-color: var(--green-500);
 
   height: 650px;
-  overflow: hidden;
 
   padding: 0 124px;
 
   @media screen and (max-width: $breakpoint) {
     height: 800px;
-    padding: 80px 56px 0;
+    padding: 80px 24px 0;
   }
 }
 
@@ -24,6 +23,8 @@ $breakpoint: 1021px;
 
   max-width: $maxWidth;
   margin: 0 auto;
+
+  position: relative;
 
   @media screen and (max-width: $breakpoint) {
     flex-direction: column;
@@ -72,7 +73,7 @@ $breakpoint: 1021px;
 
   img {
     position: absolute;
-    bottom: 40px;
+    bottom: 0;
     left: -20px;
   }
 
@@ -83,5 +84,20 @@ $breakpoint: 1021px;
       transform: translateX(-50%);
       width: 261px;
     }
+  }
+}
+
+.additionalInfo {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  z-index: 1;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media screen and (max-width: $breakpoint) {
+    bottom: -200px;
   }
 }

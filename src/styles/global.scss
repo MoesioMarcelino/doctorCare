@@ -11,7 +11,8 @@ $breakpoint: 1021px;
   --beige: #fffaf1;
   --gray-headline: #061800;
   --gray-paragraph: #384633;
-  --white: #3e3e3e;
+  --white-500: #3e3e3e;
+  --white: #ffffff;
 
   // Font sizes
   --head1Desktop: 52px;
@@ -38,6 +39,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 h1,
