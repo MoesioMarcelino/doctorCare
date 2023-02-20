@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Logo, SecondaryButton } from '@/components'
-import { MenuListProps } from '@/components/Header'
+import { Logo, SecondaryButton, SocialMedia, MenuListProps } from '@/components'
 
 import { hamburguerGreen, hamburguerWhite, instagram, facebook, youtube, close } from '@/assets'
 
@@ -10,12 +9,6 @@ import { useOverflow, useWindow } from '@/hooks'
 type HeaderMobileProps = {
   menuList: MenuListProps[]
 }
-
-const socialMediaList = [
-  { icon: instagram, alt: 'Instagram icon' },
-  { icon: facebook, alt: 'Facebook icon' },
-  { icon: youtube, alt: 'Youtube icon' }
-]
 
 export function HeaderMobile({ menuList }: HeaderMobileProps) {
   const { isScrollDown } = useWindow()
@@ -57,11 +50,7 @@ export function HeaderMobile({ menuList }: HeaderMobileProps) {
             <SecondaryButton>Agendar consulta</SecondaryButton>
           </div>
 
-          <div className={styles.socialMedia}>
-            {socialMediaList.map(({ alt, icon }, index) => (
-              <img src={icon} alt={alt} title={alt} key={alt + '-' + index} />
-            ))}
-          </div>
+          <SocialMedia />
         </div>
       )}
     </div>
