@@ -4,10 +4,6 @@ $breakpoint: 1021px;
 .container {
   background-color: var(--green-200);
   padding: 160px 124px;
-
-  @media screen and (max-width: $breakpoint) {
-    padding: 310px 50px 160px;
-  }
 }
 
 .wrapper {
@@ -18,33 +14,23 @@ $breakpoint: 1021px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 
-.category {
-  color: var(--green-900);
-  margin-bottom: 16px;
-  font-weight: 700;
-
-  @media screen and (max-width: $breakpoint) {
+  small {
+    color: var(--green-900);
+    margin-bottom: 16px;
+    font-weight: 700;
   }
 }
 
 .title {
   color: var(--gray-headline);
   margin-bottom: 60px;
-
-  @media screen and (max-width: $breakpoint) {
-  }
 }
 
 .containerCards {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-
-  @media screen and (max-width: $breakpoint) {
-    gap: 32px;
-  }
+  gap: 32px;
 }
 
 .card {
@@ -71,7 +57,14 @@ $breakpoint: 1021px;
   span {
     color: var(--gray-paragraph);
   }
+}
 
-  @media screen and (max-width: $breakpoint) {
+@media screen and (max-width: $breakpoint) {
+  .container {
+    padding: 310px 50px 100px;
+  }
+
+  .title {
+    text-align: center;
   }
 }
