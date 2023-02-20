@@ -45,11 +45,17 @@ $breakpoint: 1021px;
   }
 
   h2 {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+    line-height: 50px;
+    letter-spacing: -1.5px;
+
+    @media screen and (max-width: $breakpoint) {
+      line-height: 32px;
+    }
   }
 
   span {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     color: var(--gray-paragraph);
   }
 
@@ -66,12 +72,13 @@ $breakpoint: 1021px;
 
   img {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 40px;
+    left: -20px;
   }
 
   @media screen and (max-width: $breakpoint) {
     img {
+      bottom: 120px;
       left: 50%;
       transform: translateX(-50%);
       width: 261px;

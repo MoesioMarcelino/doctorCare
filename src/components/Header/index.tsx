@@ -1,5 +1,4 @@
 import { useWindowDimensions } from '@/hooks/useWindowDimentions'
-import { HtmlHTMLAttributes } from 'react'
 import { HeaderDesktop, HeaderMobile } from './components'
 
 import styles from './styles.module.scss'
@@ -13,20 +12,20 @@ const menuList: MenuListProps[] = [
   { label: 'Depoimentos', route: '/testimonials' }
 ]
 
-export function Header(props: HtmlHTMLAttributes<HTMLDivElement>) {
+export function Header() {
   const { isMobile } = useWindowDimensions()
 
   if (isMobile) {
     return (
       <div className={styles.container}>
-        <HeaderMobile {...props} menuList={menuList} />
+        <HeaderMobile menuList={menuList} />
       </div>
     )
   }
 
   return (
     <div className={styles.container}>
-      <HeaderDesktop {...props} menuList={menuList} />
+      <HeaderDesktop menuList={menuList} />
     </div>
   )
 }

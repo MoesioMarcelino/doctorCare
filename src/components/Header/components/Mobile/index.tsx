@@ -1,14 +1,14 @@
-import { HtmlHTMLAttributes, useState } from 'react'
+import { useState } from 'react'
 import { Logo, PrimaryButton } from '@/components'
 import { MenuListProps } from '@/components/Header'
 
-import { hamburguerWhite, hamburguerGreen, instagram, facebook, youtube, close } from '@/assets'
+import { hamburguerGreen, instagram, facebook, youtube, close } from '@/assets'
 
 import styles from './styles.module.scss'
 
 type HeaderMobileProps = {
   menuList: MenuListProps[]
-} & HtmlHTMLAttributes<HTMLDivElement>
+}
 
 const socialMediaList = [
   { icon: instagram, alt: 'Instagram icon' },
@@ -16,7 +16,7 @@ const socialMediaList = [
   { icon: youtube, alt: 'Youtube icon' }
 ]
 
-export function HeaderMobile({ menuList, ...props }: HeaderMobileProps) {
+export function HeaderMobile({ menuList }: HeaderMobileProps) {
   const [menuActivated, setMenuActivated] = useState(false)
 
   const alt = menuActivated ? 'Close icon' : 'Hamburguer icon'
@@ -26,7 +26,7 @@ export function HeaderMobile({ menuList, ...props }: HeaderMobileProps) {
   }`
 
   return (
-    <div className={styles.container} {...props}>
+    <div className={styles.container}>
       <div className={containerClassName}>
         <Logo theme={menuActivated ? 'white' : 'green'} />
         <img

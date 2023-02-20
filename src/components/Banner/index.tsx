@@ -1,3 +1,4 @@
+import { HtmlHTMLAttributes } from 'react'
 import { personaBanner, whatsappWhite } from '@/assets'
 import { PrimaryButton } from '@/components'
 
