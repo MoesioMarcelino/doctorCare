@@ -17,11 +17,8 @@ $breakpoint: 1021px;
 
 .leftSide {
   order: 0;
-
-  img {
-    height: 414px;
-    width: 480px;
-  }
+  height: 414px;
+  width: 480px;
 }
 
 .rightSide {
@@ -35,6 +32,7 @@ $breakpoint: 1021px;
 
   h3 {
     margin: 10px 0 24px;
+    color: var(--gray-headline);
   }
 
   span {
@@ -53,11 +51,8 @@ $breakpoint: 1021px;
 
   .leftSide {
     order: 1;
-
-    img {
-      height: auto;
-      width: 100%;
-    }
+    height: auto;
+    width: 100%;
   }
 
   .rightSide {

@@ -6,9 +6,7 @@ export function About() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.leftSide}>
-          <img src={personaAbout} alt="Persona doctor about us" />
-        </div>
+        <img className={styles.leftSide} src={personaAbout} alt="Persona doctor about us" />
         <div className={styles.rightSide}>
           <small>SOBRE NÓS</small>
           <h3>Entenda quem somos e por que existimos</h3>
