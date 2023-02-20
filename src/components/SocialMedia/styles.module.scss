@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  column-gap: 32px;
+
+  img {
+    cursor: pointer;
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
