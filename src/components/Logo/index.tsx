@@ -1,13 +1,13 @@
-import styles from './styles.module.scss'
+import { logoGreen, logoWhite } from '@/assets'
 
 type LogoProps = {
   theme?: 'green' | 'white'
 }
 
 export function Logo({ theme = 'green' }: LogoProps) {
-  return (
-    <div className={theme === 'green' ? styles.logoGreen : styles.logoWhite}>
-      Doctor<span>Care</span>
-    </div>
-  )
+  if (theme === 'white') {
+    return <img src={logoWhite} alt="DoctorCare logo white" />
+  }
+
+  return <img src={logoGreen} alt="DoctorCare logo white" />
 }
