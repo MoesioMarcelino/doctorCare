@@ -1,4 +1,4 @@
-import { Banner, Services, About } from '@/components'
+import { Banner, Services, About, Contact } from '@/components'
 
 import styles from './styles.module.scss'
 
@@ -8,6 +8,7 @@ export function App() {
       <Banner />
       <Services />
       <About />
+      <Contact />
     </div>
   )
 }
