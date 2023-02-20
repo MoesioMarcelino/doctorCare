@@ -1,4 +1,5 @@
 import personaBanner from './persona-banner.png'
-import personaAbout from './personal-about.png'
+import personaAbout from './persona-about.png'
+import personaContact from './persona-contact.png'
 
-export { personaBanner, personaAbout }
+export { personaBanner, personaAbout, personaContact }
