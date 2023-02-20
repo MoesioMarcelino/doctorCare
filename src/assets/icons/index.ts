@@ -8,6 +8,8 @@ import whatsappWhite from './whatsapp-white.svg'
 import ellipseCheckGreen from './ellipse-check-green.svg'
 import mapPinGreen from './map-pin-green.svg'
 import mailGreen from './mail-green.svg'
+import logoGreen from './logo-green.svg'
+import logoWhite from './logo-white.svg'
 
 export {
   hamburguerWhite,
@@ -19,5 +21,7 @@ export {
   whatsappWhite,
   ellipseCheckGreen,
   mapPinGreen,
-  mailGreen
+  mailGreen,
+  logoGreen,
+  logoWhite
 }
