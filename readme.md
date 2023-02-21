@@ -16,14 +16,12 @@
 </div>
 </br >
 
-    This an institucional application to demonstrate all benefits to use doctor care services.
+This an institucional application to demonstrate all benefits to use doctor care services.
 
-    To me, its manly target is practice knowledgements about React, UI/UX and improve skills inside frontend javascript universe
+To me, its manly target is practice knowledgements about React, UI/UX and improve skills inside frontend javascript universe
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px">
-  <img src="https://user-images.githubusercontent.com/37598129/220448514-a3600cd6-26da-4bdb-b011-a737cb6d73cd.gif">
-  <img width="200" src="https://user-images.githubusercontent.com/37598129/220448853-ff0c4d58-b0f2-48d9-b071-2f1a8c502e00.gif">
-</div>
+<img src="https://user-images.githubusercontent.com/37598129/220448514-a3600cd6-26da-4bdb-b011-a737cb6d73cd.gif">
+<img width="200" src="https://user-images.githubusercontent.com/37598129/220448853-ff0c4d58-b0f2-48d9-b071-2f1a8c502e00.gif">
 
 ## 🎯️ Requirements
 
