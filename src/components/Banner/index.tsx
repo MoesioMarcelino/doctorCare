@@ -1,12 +1,13 @@
-import { HtmlHTMLAttributes } from 'react'
 import { personaBanner, whatsappWhite } from '@/assets'
 import { AdditionalInfo, PrimaryButton } from '@/components'
+import { site } from '@/consts'
+import { openSite } from '@/utils'
 
 import styles from './styles.module.scss'
 
 export function Banner() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="banner-section">
       <div className={styles.wrapper}>
         <div className={styles.leftSide}>
           <small>Boas-vindas a doctorcare 👋️</small>
@@ -15,7 +16,7 @@ export function Banner() {
             Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e
             proporcionar uma cura a longo prazo.
           </span>
-          <PrimaryButton>
+          <PrimaryButton onClick={openSite}>
             <img src={whatsappWhite} alt="Whatsapp white icon" />
             Agende sua consulta
           </PrimaryButton>

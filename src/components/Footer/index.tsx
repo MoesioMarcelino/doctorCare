@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 export function Footer() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="footer-section">
       <div className={styles.wrapper}>
         <div className={styles.info}>
           <div className={styles.logoContainer}>

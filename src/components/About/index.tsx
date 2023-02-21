@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 export function About() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about-section">
       <div className={styles.wrapper}>
         <img className={styles.leftSide} src={personaAbout} alt="Persona doctor about us" />
         <div className={styles.rightSide}>
